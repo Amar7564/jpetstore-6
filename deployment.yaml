@@ -16,7 +16,7 @@ spec:
       - name: petshop
         image: amarsatish/petshop:latest
         ports:
-        - containerPort: 8089
+        - containerPort: 8080
         imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -31,4 +31,4 @@ spec:
   - name: http
     protocol: TCP
     port: 80
-    targetPort: 8089
+    targetPort: 8080
